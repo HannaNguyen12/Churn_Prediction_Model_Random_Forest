@@ -34,7 +34,7 @@ Rather than stopping at predictive accuracy, the project integrates an economic 
 
 + **Class imbalance handling**: SMOTE oversampling
 
-+ **Model**: Random Forest classifier 
++ **Model**: Compare KNN, Random forest, Logistic regression and Naive Bayes' performance and choose one with highest AUC
 
 + **Hyperparameter tuning**: Randomized search with Cross validation
 
@@ -44,12 +44,12 @@ Rather than stopping at predictive accuracy, the project integrates an economic 
 
 > ## Result
 
-+ **Predictive performance**: Random Forest achieves ROC-AUC ≈ 0.66
++ **Predictive performance**: Random Forest achieves ROC-AUC ≈ 0.65
 
-+ **Economic impact**: additional $393,559 in expected value relative to a no-intervention baseline (under stated cost and revenue assumptions)
++ **Economic impact**: additional $364,862 in expected value relative to a no-intervention baseline (under stated cost and revenue assumptions)
 
-+ **Optimal decision threshold**: t=0.257 (selected by maximizing an objective function TPR − 1.093⋅FPR)
++ **Optimal decision threshold**: t=0.367 (selected by maximizing an objective function TPR − 1.093⋅FPR)
 
-+ **Operational trade-off at optimal threshold**:  Precision = 0.91, Recall = 0.31 (intentional recall prioritization due to higher cost of missed churners)
++ **Operational trade-off at optimal threshold**:  Precision = 0.38, Recall = 0.65 (intentional prioritize recall due to higher cost of missed churners)
 
 + **Flexibility**: Economic value is fully parameterized and can be recalculated for different incentive costs, customer lifetime values, or incentive effectiveness rates
