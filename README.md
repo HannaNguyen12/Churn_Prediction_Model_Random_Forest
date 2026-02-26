@@ -44,6 +44,8 @@ Rather than stopping at predictive accuracy, the project integrates an economic 
 
 > ## Result
 
+![My Chart](reports/figures/roc_curves_models.png)
+
 + **Predictive performance**: Random Forest achieves ROC-AUC ≈ 0.65
 
 + **Economic impact**: additional $366,679 in expected value relative to a no-intervention baseline (under stated cost and revenue assumptions)
